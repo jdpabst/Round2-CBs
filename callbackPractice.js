@@ -70,7 +70,12 @@ multiply(4, 3, function(answer){
 // If it does, invoke the callback with true as an argument. 
 // If the name does not exist, invoke the callback with false as an argument.
 
-  //Code Here 
+  function contains(arr, name, cb){
+    if(arr.includes(name)){
+      return cb(true);
+    }
+    return cb(false);
+  }
 
 
 
